@@ -1,0 +1,42 @@
+{
+  "license": "CC0-1.0",
+  "source": "implementationguide/hspc.xml",
+  "npm-name": "hl7.fhir.hspc",
+  "version": "3.0.1",
+  "tool": "jekyll",
+  "logging": ["init","progress","context","html","tx"],
+  "logging_orig": ["init","context","html","tx"],
+  "paths": {
+    "resources": ["resources"],
+    "pages": "pages",
+    "temp": "temp",
+    "output": "output",
+    "qa": "qa",
+    "txCache": "txCache",
+    "specification": "http://hl7.org/fhir/2017Jan/"
+  },
+  "dependencyList": [{
+    "name": "USCore",
+    "location": "http://hl7.org/fhir/us/core",
+    "version": "1.1.0"
+  }],
+  "defaults": {
+    "Any": {
+      "template-base": "instance-template-base.html",
+      "template-format": "instance-template-fmt.html"
+    },
+    "StructureDefinition": {
+      "template-defns": "instance-template-defns.html"
+    }
+  },
+  "canonicalBase": "http://hl7.org/fhir/hspc", 
+  "sct-edition": "http://snomed.info/sct/731000124108",
+  "do-transforms": "true",
+  "resources":{
+    "Extension/":{"base":"Extension-.html"},
+	
+	"StructureDefinition/":{"base":"StructureDefinition-.html"},
+	
+	"ValueSet/":{"base":"ValueSet-.html"}
+  }
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
+  <id value="blooodTypeVS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <url value="http://hl7.org/fhir/hspc/ValueSet/bloodTypeVS"/>
+    <version value="0.01"/>
+    <name value="HSPC Blood Type value set"/>
+    <status value="draft"/>
+	<experimental value="true"/>
+    <date value="2018-10-23"/>
+    <publisher value="Health Services Platform Consortium (HSPC)"/>
+    <description value="Select SNOMED CT codes that describe common blood types."/>
+    <immutable value="true"/>
+    <copyright value="TBD"/>
+    <extensible value="true"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>	
+			<concept>	
+				<code value ="278154007"/>
+				<display value ="Blood group AB Rh(D) negative"/>
+			</concept>	
+			<concept>	
+				<code value ="278153001"/>
+				<display value ="Blood group B Rh(D) negative"/>
+			</concept>	
+			<concept>	
+				<code value ="278152006"/>
+				<display value ="Blood group A Rh(D) negative"/>
+			</concept>	
+			<concept>	
+				<code value ="278148006"/>
+				<display value ="Blood group O Rh(D) negative"/>
+			</concept>	
+			<concept>	
+				<code value ="278151004"/>
+				<display value ="Blood group AB Rh(D) positive"/>
+			</concept>	
+			<concept>	
+				<code value ="278150003"/>
+				<display value ="Blood group B Rh(D) positive"/>
+			</concept>	
+			<concept>	
+				<code value ="278149003"/>
+				<display value ="Blood group A Rh(D) positive"/>
+			</concept>	
+			<concept>	
+				<code value ="278147001"/>
+				<display value ="Blood group O Rh(D) positive"/>
+			</concept>
+		</include>
+    </compose>
+</ValueSet>
